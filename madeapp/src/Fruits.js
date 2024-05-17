@@ -4,8 +4,7 @@ import './Fruits.css';
 function Fruits() {
   // dataには何が入る？
   // setDataの呼び出し箇所に注目（※１）
-  const [data, setData] = useState([]);
-                                  /*↑ ここに初期値。無しだとundefinedになる */
+  const [data, setData] = useState([]);/*↑ ここに初期値。無しだとundefinedになる */
 
   useEffect(() => {
     fetchFruitData();
